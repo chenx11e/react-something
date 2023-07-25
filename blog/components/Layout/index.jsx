@@ -1,14 +1,17 @@
-import Navbar from '@/components/Navbar'
+import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-
-const Layout = ({ children }) => {
+import Content from '@/components/Content'
+import styles from './index.module.css'
+import { Layout } from 'antd'
+// const { Footer } = Layout
+const CLayout = ({ children }) => {
   return (
-    <div>
-      <Navbar />
-      这是Layout
+    <Layout className={styles.layout}>
+      <Header />
+      <div className={styles.content}>{children}</div>
       <Footer />
-    </div>
+    </Layout>
   )
 }
 
-export default Layout
+export default CLayout
