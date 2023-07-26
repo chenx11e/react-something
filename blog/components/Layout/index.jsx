@@ -1,6 +1,5 @@
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import Content from '@/components/Content'
 import styles from './index.module.css'
 import { Layout } from 'antd'
 // const { Footer } = Layout
