@@ -1,6 +1,7 @@
 import { getAllIds, getPostById } from '@/utils/postTools'
 import styles from './article.module.css'
 import { Tag } from 'antd'
+import Progress from '@/components/Progress'
 // 这个data就是getStaticProps中的props内容
 const Post = ({ data }) => {
   console.log(data)
@@ -8,6 +9,7 @@ const Post = ({ data }) => {
   return (
     <div>
 
+      <Progress />
       <p className={styles.title}>{data.title}</p>
       <p className={styles.date}>{data.date}</p>
       {data.tags
