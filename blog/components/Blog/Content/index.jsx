@@ -30,9 +30,11 @@ const CContent = ({ posts }) => {
               : ''}
 
             <Link href={`/blog/${post.id}`}>
-              <a>{post.title}</a>
+              <a>
+                {post.title}
+                <div>{post.date}</div>
+              </a>
             </Link>
-            {post.date}
           </div>
         ))}
       </Timeline>

@@ -17,7 +17,7 @@ const Post = ({ data }) => {
           </Tag>
         ))
         : ''}
-      <article>
+      <article className='md'>
         <div dangerouslySetInnerHTML={{ __html: data.htmlContent }}></div>
       </article>
     </div>

@@ -77,7 +77,7 @@ export const getPostById = async (id) => {
     id,
     date: format(matterData.data.date, 'LLLL d, yyyy'),
     title: matterData.data.title,
-    tags: matterData.data.tags,
+    tags: matterData.data.tags ? matterData.data.tags : null,
     htmlContent,
   }
 }
